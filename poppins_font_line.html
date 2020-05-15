@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> 타이포그래피</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  </head>
+  <body class="P">
+    <div id="nav">
+    <ul >
+          <li id="typo"> <a  href="index.html">TYPO</a> </li>
+      <li><a href="poppins_font_weight.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" style=" margin-right: 36px;"> P.무게와 크기의 힘</a></li>
+      <li style="padding-top:25px;"><a href="poppins_font_line.html"  class="active" > P.자간,행간 사이사이 </a></li>
+      <li><a href="poppins_font_story.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black">P.포핀스 이야기</a></li>
+      <li><a href="spoqa_font_weight.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black">S.무게와 크기의 힘</a></li>
+      <li><a href="spoqa_font_line.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black">S.자간,행간 사이사이</a></li>
+      <li><a class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="spoqa_font_story.html">S. 스포카 한 산스 이야기</a></li>
+
+    </ul>
+  </div>
+
+  <div class="group_2">
+    <button onclick="topFunction()" class="top_b2"> ↑ </button>
+    <center>
+    <img class="p_img" src="./img/P_line.png" >
+    </center>
+  </div>
+
+    <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("nav").style.top = "0";
+    } else {
+  document.getElementById("nav").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+  }
+  var mybutton = document.getElementById("top_b2");
+  function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  }
+
+  </script>
+
+  </body>
+</html>
